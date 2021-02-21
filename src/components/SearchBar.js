@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 
-const SearchBar = ({search, onSubmit, countrySearched}) => {
+const SearchBar = ({search,countrySearched}) => {
 
 	return (
 			<form>
 			Filter by Country:
-					<input name="search" type="text" value={search} onChange={countrySearched}></input>
-					<button type="submit" onClick={onSubmit}>Filter</button>
+					<input name="search" type="text" value={search} onChange={countrySearched} placeholder={"search country"}></input>
 			</form>
 	)
 

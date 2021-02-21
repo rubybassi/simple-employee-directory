@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import EmployeeData from './EmployeeData.js';
 
-
-const EmployeeTable = ({sortColumn, search, filter}) => {
+const EmployeeTable = ({sortColumn, search}) => {
 	
 return (
 
@@ -10,7 +9,7 @@ return (
 		<table className="">
 			<thead>
 				<tr>
-				<th>Pic</th>
+				<th>Thumbnail</th>
 				<th type="submit" id='gender' onClick={sortColumn}>Gender</th>
 				<th type="submit" id='firstname' onClick={sortColumn}>First Name</th>
 				<th type="submit" id='surname' onClick={sortColumn}>Surname</th>
@@ -18,7 +17,7 @@ return (
 				<th type="submit" id='email' onClick={sortColumn}>Email</th>
 				</tr>
 			</thead>
-			<EmployeeData search={search} filter={filter}/>
+			<EmployeeData search={search}/>
 		</table>
 	</div>
 )
