@@ -6,21 +6,14 @@ import EmployeeTable from "./components/EmployeeTable.js";
 import SearchBar from "./components/SearchBar.js";
 
 function App() {
-  const [sorted, setSort] = useState(false);
   const [search, setSearch] = useState("");
-
-  // get and set column sort status
-  const sortColumn = (e) => {
-    e.preventDefault();
-    console.log("sorted", e.target.id);
-    setSort(true);
-  };
+  const [sort, setSort] = useState(false);
 
   return (
     <div className="App">
       <Header />
-      <SearchBar setSearch={setSearch} search={search} />
-      <EmployeeTable sortColumn={sortColumn} search={search} />
+      <SearchBar search={search} setSearch={setSearch} />
+      <EmployeeTable search={search} sort={sort} setSort={setSort}/>
     </div>
   );
 }
