@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,GACE,cACF,CAEA,kBACE,iBACF,CAEA,WACI,kCACJ","file":"main.39c5c3f0.chunk.css","sourcesContent":["th {\n  cursor: pointer;\n}\n\n.table, .hero-text {\n  text-align: center;\n}\n\n.hero-text  {\n    background-color: #DBCBD8 !important; \n}\n"]}
