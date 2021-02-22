@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Image from 'react-bootstrap/Image'
 
 const EmployeeData = ({ search, sort, setSort, value }) => {
   const [employees, setEmployees] = useState([]);
@@ -6,7 +7,7 @@ const EmployeeData = ({ search, sort, setSort, value }) => {
   // fetch data and render on page load once
   useEffect(() => {
     console.log("intial employee data render");
-    const queryURL = "https://randomuser.me/api/?results=10";
+    const queryURL = "https://randomuser.me/api/?results=50";
     const fetchEmployees = async () => {
       const response = await fetch(queryURL);
       const payload = await response.json();
@@ -75,7 +76,7 @@ const EmployeeData = ({ search, sort, setSort, value }) => {
           .map((employee) => (
             <tr key={employee.login.uuid}>
               <td>
-                <img src={employee.picture.thumbnail} alt="employee" />
+              <Image src={employee.picture.thumbnail} alt="employee" roundedCircle />
               </td>
               <td>{employee.gender}</td>
               <td>{employee.name.first}</td>
