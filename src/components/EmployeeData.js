@@ -69,7 +69,7 @@ const EmployeeData = ({ search, sort, setSort, value }) => {
         // loop array, if matched to user search return filtered results else return all data.
         employees
           .filter((employee) => {
-            if (employee.location.country.toLowerCase().includes(search)) {
+            if (employee.location.country.toLowerCase().includes(search.toLowerCase())) {
               return employee;
             }
           })
