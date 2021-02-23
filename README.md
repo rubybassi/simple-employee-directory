@@ -32,7 +32,7 @@ The user is also able to:
 ![Homepage](public/simple-employee-directory.png)
 
 #### Demo
-[Functionality Demo]()
+![Demo](https://user-images.githubusercontent.com/25780327/108786138-daa28800-756a-11eb-952c-ccd000aa3379.gif)
 
 ## Execute
 Clone the repo and in the command line run `npm install` or shortcut `npm i` to download all the npm package dependancies which include: Node Express and Mongoose.
